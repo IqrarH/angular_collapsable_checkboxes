@@ -1,0 +1,10 @@
+<button data-toggle="collapse" data-target="#demo"
+*ngFor="let number of [0,1,2,3,4]; let i = index" (click)="assign(i)">
+    {{'Collapsable ' + i}}
+    <div *ngIf="num === i && show">
+        <input *ngFor="let number of [0,1,2]; let i = index" 
+        type="checkbox" class="k-checkbox" style="width: auto" id="{{ 'wave' + i }}">
+    </div>
+</button>
+
+    
